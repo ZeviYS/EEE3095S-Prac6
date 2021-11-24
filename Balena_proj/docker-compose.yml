@@ -17,4 +17,5 @@ services:
       - 'shareddata:/data'
     ports:
       - 5003:5003
+    privileged: true
     restart: always
