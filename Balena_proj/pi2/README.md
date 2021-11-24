@@ -1,0 +1,1 @@
+Server side Pi (trying to run both services on the same Pi because I only have access to one)

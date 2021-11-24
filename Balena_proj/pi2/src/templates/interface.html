@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<title>Sensor Stream Server</title>
+<html>
+	<head>
+		
+		<!-- Making a heading that will apper in the middle of the screen -->
+
+		
+		<h1>
+			P2 Server Web Interface:
+		</h1>
+		
+	
+		<!-- Make sure that the buttons appear in the left of the screen-->
+		<style>
+			.Buttons
+			{
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="Buttons">
+
+			<!-- Buttons that code for specific functionalities. -->
+			<a href="{{ url_for('.sensON') }}">
+				<button>
+					Sensor On
+				</button>
+			</a>
+
+			<br>
+			<br>
+			
+			<a href="{{ url_for('.sensOFF') }}">
+				<button>
+					Sensor Off
+				</button>
+			</a>
+			
+			<br>
+			<br>
+
+			<a href="{{ url_for('.clientStatus') }}">
+				<button>
+					Status
+				</button>
+			</a>
+
+			<br>
+			<br>
+
+			<a href="{{ url_for('.log') }}">
+				<button>
+					Log Check
+				</button>
+			</a>
+
+			<br>
+			<br>
+
+			<a href="{{ url_for('.download_file' ) }}">
+				<button>
+					Log Download
+				</button>
+			</a>
+
+			<br>
+			<br>
+
+			<a href="{{ url_for('.exit') }}">
+				<button>
+					Exit
+				</button>
+			</a>
+		</div>
+	</body>
+</html>
