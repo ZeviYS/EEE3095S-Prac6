@@ -13,7 +13,7 @@ PORT = 5003  # Arbitrary non-privileged port
 
 # start server
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind(HOST, PORT)
+server.bind((HOST, PORT))
 server.listen()
 client, address = server.accept()
 #print for testing so I can see in logs
