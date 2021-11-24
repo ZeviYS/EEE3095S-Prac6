@@ -61,7 +61,7 @@ def exit():
     sensor_status = "Exit"
     client.send(sensor_status.encode())
     print("Exit request")
-    reutrn sensor_status
+    return sensor_status
 
 # logs from logData
 @app.route("/log")
