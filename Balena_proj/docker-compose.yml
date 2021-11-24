@@ -1,0 +1,20 @@
+version: '2'
+volumes:
+  shareddata:
+services:
+  client:
+    build: ./balena-python-hello-world-master
+    volumes:
+      - 'shareddata:/data:ro'
+    ports:
+      - 80:80
+    privileged: true
+    restart: always
+
+  server:
+    build: ./pi2
+    volumes:
+      - 'shareddata:/data'
+    ports:
+      - 5003:5003
+    restart: always
